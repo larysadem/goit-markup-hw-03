@@ -127,6 +127,12 @@ body {
   padding-top: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .section .title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -167,8 +173,15 @@ body {
   background-color: var(--bg-team);
 }
 
+.team li {
+  background: var(--white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team .subtitle {
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -180,12 +193,17 @@ body {
 
 .team .text {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+.workers {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .list {
@@ -231,14 +249,28 @@ body {
 }
 
 .filter {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+
   font-family: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
   text-align: center;
-  color: #212121;
+  color: var(--title-text-color);
   background-color: var(--bg-team);
+}
+
+.filter-list {
+  margin-bottom: 50px;
+
+  /* display: flex; */
+}
+
+.filter-list button {
+  display: inline-block;
 }
 
 .filter:hover,
@@ -248,6 +280,9 @@ body {
 }
 
 .portfolio .subtitle {
+  margin-top: 0;
+  margin-bottom: 4px;
+
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -256,7 +291,14 @@ body {
 }
 
 .portfolio .text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-weight: normal;
   font-size: 16px;
   line-height: 1.875;
+}
+
+.product {
+  padding: 20px 24px;
 }
